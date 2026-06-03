@@ -29,6 +29,12 @@ scoop install eusage
 
 If SmartScreen appears, choose `More info`, then `Run anyway`.
 
+## Release updates
+
+`bucket/eusage.json` is updated automatically by the `DanyilLiubchakUk/eusage`
+publish workflow after each release tag. Manual edits are only for recovery if
+that workflow fails.
+
 ## Upgrade
 
 The app normally updates itself through GitHub Releases and the in-app `Restart to update` button.
