@@ -1,16 +1,16 @@
 {
-  "version": "0.6.27",
+  "version": "0.6.28",
   "description": "Internal team AI usage tracker",
   "homepage": "https://github.com/DanyilLiubchakUk/eusage",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/DanyilLiubchakUk/eusage/releases/download/v0.6.27/eUsage_0.6.27_x64-setup.exe",
-      "hash": "acf301bafb7aa45b19898b9e7af586945704e986b00c301ce0970bd622347fb0"
+      "url": "https://github.com/DanyilLiubchakUk/eusage/releases/download/v0.6.28/eUsage_0.6.28_x64-setup.exe",
+      "hash": "f777a9a465f007206320d3fa196cbfc1229cdad05ecf5583d2503e89cfdd6cee"
     }
   },
   "pre_install": [
-    "$installer = Get-ChildItem $cachedir -Filter 'eusage#0.6.27#*.exe' | Select-Object -First 1",
+    "$installer = Get-ChildItem $cachedir -Filter 'eusage#0.6.28#*.exe' | Select-Object -First 1",
     "if ($installer) { Unblock-File -Path $installer.FullName -ErrorAction SilentlyContinue }"
   ],
   "installer": {
