@@ -14,7 +14,7 @@ irm get.scoop.sh | iex
 ## Install eUsage
 
 ```powershell
-scoop bucket add eusage https://github.com/DanyilLiubchakUk/scoop-eusage
+scoop bucket add eusage https://github.com/dliubchak/scoop-eusage
 scoop install eusage
 ```
 
@@ -23,7 +23,7 @@ The manifest runs `Unblock-File` on the downloaded installer before silent insta
 If Windows still blocks the installer, run:
 
 ```powershell
-Unblock-File "$env:USERPROFILE\scoop\cache\eusage#0.6.24#*.exe"
+Unblock-File "$env:USERPROFILE\scoop\cache\eusage#0.6.31#*.exe"
 scoop install eusage
 ```
 
@@ -31,7 +31,7 @@ If SmartScreen appears, choose `More info`, then `Run anyway`.
 
 ## Release updates
 
-`bucket/eusage.json` is updated automatically by the `DanyilLiubchakUk/eusage`
+`bucket/eusage.json` is updated automatically by the `dliubchak/eusage`
 publish workflow after each release tag. Manual edits are only for recovery if
 that workflow fails.
 
