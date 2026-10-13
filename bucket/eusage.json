@@ -1,16 +1,16 @@
 {
-  "version": "0.6.30",
+  "version": "0.6.31",
   "description": "Internal team AI usage tracker",
-  "homepage": "https://github.com/DanyilLiubchakUk/eusage",
+  "homepage": "https://github.com/dliubchak/eusage",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/DanyilLiubchakUk/eusage/releases/download/v0.6.30/eUsage_0.6.30_x64-setup.exe",
-      "hash": "685b03fe6793b1a6fb12166b8ba626c0421987cf1b3dc02823fb33ca465d99e3"
+      "url": "https://github.com/dliubchak/eusage/releases/download/v0.6.31/eUsage_0.6.31_x64-setup.exe",
+      "hash": "c0d8297ac8ade279b316382ce9e71877e7be567274549b7d8ea048a208a405e7"
     }
   },
   "pre_install": [
-    "$installer = Get-ChildItem $cachedir -Filter 'eusage#0.6.30#*.exe' | Select-Object -First 1",
+    "$installer = Get-ChildItem $cachedir -Filter 'eusage#0.6.31#*.exe' | Select-Object -First 1",
     "if ($installer) { Unblock-File -Path $installer.FullName -ErrorAction SilentlyContinue }"
   ],
   "installer": {
@@ -24,12 +24,12 @@
     ]
   },
   "checkver": {
-    "github": "https://github.com/DanyilLiubchakUk/eusage"
+    "github": "https://github.com/dliubchak/eusage"
   },
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://github.com/DanyilLiubchakUk/eusage/releases/download/v$version/eUsage_$version_x64-setup.exe"
+        "url": "https://github.com/dliubchak/eusage/releases/download/v$version/eUsage_$version_x64-setup.exe"
       }
     }
   }
